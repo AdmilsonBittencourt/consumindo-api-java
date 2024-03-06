@@ -6,6 +6,17 @@ public class Post {
   String title;
   String body;
 
+  public Post(Integer userId, String title, String body) {
+    this.userId = userId;
+    this.title = title;
+    this.body = body;
+  }
+
+  @Override
+  public String toString() {
+    return "Post [userId=" + userId + ", id=" + id + ", title=" + title + ", body=" + body + "]";
+  }
+
   public void setUserId(Integer userId) {
     this.userId = userId;
   }
